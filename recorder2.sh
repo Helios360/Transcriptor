@@ -1,13 +1,13 @@
 #!/bin/bash
 
-read -p "Check for updates? (Y/n): " update
+#read -p "Check for updates? (Y/n): " update
 
-if [[ "$update" =~ ^[Yy]$ || -z "$update" ]]; then
-    sudo pacman -S --needed pipewire pipewire-audio-client-libraries libspa-0.2-bluetooth libspa-0.2-jack
-    sudo pacman -S --needed pavucontrol ffmpeg
-else
-    echo "Skipping updates..."
-fi
+#if [[ "$update" =~ ^[Yy]$ || -z "$update" ]]; then
+#    sudo pacman -S --needed pipewire pipewire-audio-client-libraries libspa-0.2-bluetooth libspa-0.2-jack
+#    sudo pacman -S --needed pavucontrol ffmpeg
+#else
+#    echo "Skipping updates..."
+#fi
 
 # Enable and start pipewire services
 systemctl --user --now enable pipewire pipewire-pulse
