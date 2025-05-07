@@ -3,11 +3,11 @@ A simple script that log in to discord via a browser (geckodriver) then records 
 
 Don't forget to setup the my-venv python environment with the requirement
 Don't forget to set the correct geckodriver path
-
+The server also needs a screen and a mouse+kb I think
 When launching from ssh don't forget to change the display fowarding, the start.sh should do this itself
 
-to launch the program from one ssh command you can :
+To launch the program from one ssh command you can :
 
-ssh -Y user@10.0.0.18 "cd ~/Programs/AutomateThis && ./start.sh"
+ssh -Y user@[ServerIP] "cd [PATH TO START.SH] && ./start.sh"
 
 Have fun with it
